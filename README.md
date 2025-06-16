@@ -1,54 +1,22 @@
-# React + TypeScript + Vite
+# Technical Test with TypeScript and React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a technical test from a European company for a salary of **€55,000/year**.
 
-Currently, two official plugins are available:
+The goal of this technical test is to create an application similar to the one provided at the following link:  
+👉 [Example Application](https://midu-react-11.surge.sh/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To achieve this, you must use the API provided by:  
+🔗 [https://randomuser.me/](https://randomuser.me/)
 
-## Expanding the ESLint configuration
+## Steps to follow
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. ✅ Fetch 100 rows of data using the API.
+2. Display the data in a table format, similar to the example.
+3. Provide the option to highlight/color rows as shown in the example.
+4. Allow the data to be sorted by country as demonstrated in the example.
+5. Enable the ability to delete a row as shown in the example.
+6. Implement a feature that allows restoring the initial state (i.e., recover all deleted rows).
+7. Handle any potential errors that may occur.
+8. Implement a feature to filter the data by country.
+9. Avoid re-sorting the data when the user changes the country filter.
+10. Enable sorting by clicking on the column header.
