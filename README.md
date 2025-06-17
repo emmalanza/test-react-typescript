@@ -12,7 +12,7 @@ To achieve this, you must use the API provided by:
 
 1. ✅ Fetch 100 rows of data using the API.
 2. ✅ Display the data in a table format, similar to the example.
-3. Provide the option to highlight/color rows as shown in the example.
+3. ✅ Provide the option to highlight/color rows as shown in the example.
 4. Allow the data to be sorted by country as demonstrated in the example.
 5. Enable the ability to delete a row as shown in the example.
 6. Implement a feature that allows restoring the initial state (i.e., recover all deleted rows).
