@@ -11,7 +11,7 @@ To achieve this, you must use the API provided by:
 ## Steps to follow
 
 1. ✅ Fetch 100 rows of data using the API.
-2. Display the data in a table format, similar to the example.
+2. ✅ Display the data in a table format, similar to the example.
 3. Provide the option to highlight/color rows as shown in the example.
 4. Allow the data to be sorted by country as demonstrated in the example.
 5. Enable the ability to delete a row as shown in the example.

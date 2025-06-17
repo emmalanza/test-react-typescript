@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { type User } from "./types.d";
+import { UsersLists } from "./components/UsersList";
 
 function App() {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=100")
@@ -13,11 +15,11 @@ function App() {
   return (
     <>
       <h1>Prueba técnica</h1>
-      {
-        JSON.stringify(users)
-      }
+      <UsersLists users={users} />
     </>
   )
 }
 
 export default App;
+
+
